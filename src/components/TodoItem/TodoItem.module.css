@@ -1,0 +1,45 @@
+.todoItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    background: var(--gray-500);
+    border: 1px solid var(--blue-400);
+    border-radius: 8px;
+    padding: 1rem;
+
+    box-shadow: 0 2px 8px hwb(0 0% 100% 6%);
+}
+
+.todoItem + .todoItem {
+    margin-top: .75rem;
+}
+
+.todoItem .circle,
+.todoItem .trash {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.todoItem .circle svg {
+    color: var(--blue-500);    
+}
+
+.todoItem > span {
+    color: var(--gray-100);
+    line-height: 1.4;
+
+}
+
+.todoItem .spanStrikeThrough {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+
+.todoItem .trash {
+    color: var(--gray-300);
+
+}
